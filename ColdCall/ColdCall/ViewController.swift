@@ -18,11 +18,33 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var numberLabel: UILabel!
+    
     @IBAction func callButton(_ sender: Any) {
         
         let randomNum = arc4random_uniform(UInt32(namesArray.count))
         
+        // Random number for the colorful displayed number
+        let randomNum2 = arc4random_uniform(5) + 1
+        
         nameLabel.text = namesArray[Int(randomNum)]
+        
+        numberLabel.text = String(randomNum2)
+        numberLabel.alpha = 1
+        
+        if randomNum2 < 3 {
+            
+            numberLabel.textColor = UIColor.red
+        }
+        
+        else if randomNum2 < 5 {
+            
+            numberLabel.textColor = UIColor.orange
+        }
+        else {
+            
+            numberLabel.textColor = UIColor.green
+        }
         
     }
     

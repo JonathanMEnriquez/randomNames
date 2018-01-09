@@ -18,9 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1Y-GA-3mw">
-                                <rect key="frame" x="0.0" y="28" width="375" height="55"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1Y-GA-3mw">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz3-fY-0Kb">
+                                <rect key="frame" x="118" y="196.5" width="139" height="274.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="230"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -40,13 +46,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fcy-Cu-S5O" secondAttribute="trailing" id="Anq-3m-Agu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fcy-Cu-S5O" secondAttribute="bottom" constant="20" id="Fxf-Xj-uyS"/>
                             <constraint firstItem="T1Y-GA-3mw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jn2-c2-bdM"/>
+                            <constraint firstItem="Pz3-fY-0Kb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOZ-wB-1Cf"/>
                             <constraint firstItem="T1Y-GA-3mw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Vxd-Ff-y7Z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1Y-GA-3mw" secondAttribute="trailing" id="Y6F-Ef-fTd"/>
+                            <constraint firstItem="Pz3-fY-0Kb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qNv-Qy-Jft"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="T1Y-GA-3mw" id="b0H-Hx-9NX"/>
+                        <outlet property="numberLabel" destination="Pz3-fY-0Kb" id="J6Y-NW-gKF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
